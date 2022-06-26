@@ -63,7 +63,7 @@ func (m *MealDB) String() string {
 }
 
 func (m *MealDB) GetMealsWithProtein(p Protein) []Meal {
-	return nil
+	return m.mealMap[p]
 }
 
 func (m *MealDB) AddDummyData() {

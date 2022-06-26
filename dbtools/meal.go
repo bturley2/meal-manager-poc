@@ -1,5 +1,7 @@
 package dbtools
 
+import "fmt"
+
 const (
 	chicken Protein = iota
 	beef
@@ -25,6 +27,11 @@ type Meal struct {
 	Notes   string  `json:"notes"`
 }
 
+func (m *Meal) String() string {
+	return fmt.Sprintf("[Title: '%v', Url: '%v', Rating: '%v', Protein: '%v', Notes: '%v']",
+		m.Title, m.Url, m.Rating, m.Protein, m.Notes)
+}
+
 func IsValidProtein(p string) bool {
 	for _, v := range acceptedProteins {
 		if p == v {
@@ -41,4 +48,8 @@ func StringToProtein(p string) Protein {
 		}
 	}
 	return -1
+}
+
+func ProteinToString(p Protein) string {
+	return acceptedProteins[p]
 }

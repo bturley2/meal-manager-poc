@@ -7,17 +7,20 @@ import (
 )
 
 const (
-	mainMenuPrompt = `# ######## MAIN MENU ######### #
+	mainMenuPrompt = `
+# ######## MAIN MENU ######### #
 1) Find me Something Good
 2) Search by protein
 3) Add a food
 4) Exit
 # ############################ #`
 
-	mealSearchPrompt = `# ########## MEAL SEARCH ########## #
+	mealSearchPrompt = `
+# ########## MEAL SEARCH ########## #
 What protein type would you like?
 (Options: chicken, beef, turkey, pork, fish, veggie, other)
-Type "exit" when finished.`
+Type "exit" when finished.
+# ################################# #`
 
 	dbPath = "db.json"
 )
@@ -82,9 +85,8 @@ func getRandomMeal() {
 func searchMeals() {
 	var userSelection string
 
-	fmt.Println(mealSearchPrompt)
-
 	for {
+		fmt.Println(mealSearchPrompt)
 		fmt.Printf(">")
 		if _, err := fmt.Scanln(&userSelection); err != nil {
 			fmt.Println("Invalid selection. Please try again.")
@@ -94,7 +96,8 @@ func searchMeals() {
 		userSelection = strings.TrimSpace(strings.ToLower(userSelection))
 
 		if dbtools.IsValidProtein(userSelection) {
-			mealDB.GetMealsWithProtein(dbtools.StringToProtein(userSelection))
+			p := dbtools.StringToProtein(userSelection)
+			printMealByProtein(p)
 		} else if userSelection == "exit" {
 			return
 		} else {
@@ -103,8 +106,16 @@ func searchMeals() {
 	}
 }
 
-func printMealByProtein() {
+func printMealByProtein(p dbtools.Protein) {
+	fmt.Printf("\nHere's all stored meals for %v:\n", dbtools.ProteinToString(p))
 
+	meals := mealDB.GetMealsWithProtein(p)
+	for _, m := range meals {
+		fmt.Printf("\t%v\n", m.String())
+	}
+	if len(meals) == 0 {
+		fmt.Println("NONE")
+	}
 }
 
 func addFood() {
