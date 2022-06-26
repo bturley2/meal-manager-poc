@@ -130,20 +130,20 @@ func addMeal() {
 
 	fmt.Println("\nEnter New Meal Info: ")
 	fmt.Print("URL: ")
-	if m.Url, err = reader.ReadString('\n'); err != nil {
+	if m.Url, err = reader.ReadString('\n'); err != nil || m.Url == "" {
 		return
 	}
 	m.Url = strings.TrimSpace(m.Url)
 
 	fmt.Print("Title: ")
-	if m.Title, err = reader.ReadString('\n'); err != nil {
+	if m.Title, err = reader.ReadString('\n'); err != nil || m.Title == "" {
 		return
 	}
 	m.Title = strings.TrimSpace(m.Title)
 
 	fmt.Print("Protein: ")
 	input, err = reader.ReadString('\n')
-	if err != nil {
+	if err != nil || input == "" {
 		return
 	}
 	input = strings.TrimSpace(strings.ToLower(input))
