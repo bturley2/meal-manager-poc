@@ -1,23 +1,471 @@
 [
 	{
 		"Protein": 0,
-		"title": "Chimken Recipe",
-		"url": "www.urmom.com",
-		"rating": 2,
-		"notes": "Very Spicy"
+		"title": "Roasted Butternut Squash Broccoli Cheddar Chicken Couscous",
+		"url": "https://www.ambitiouskitchen.com/roasted-butternut-squash-broccoli-cheddar-chicken-couscous/",
+		"rating": 0,
+		"notes": ""
 	},
 	{
 		"Protein": 0,
-		"title": "Chimken Recipe",
-		"url": "www.urmom.com",
-		"rating": 2,
-		"notes": "Very Spicy"
+		"title": "Chicken \u0026 Spinach Skillet Pasta with Lemon \u0026 Parmesan",
+		"url": "https://www.eatingwell.com/recipe/267768/chicken-spinach-skillet-pasta-with-lemon-parmesan/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Creamy Dijon Rosemary Chicken",
+		"url": "https://www.saltandlavender.com/creamy-dijon-rosemary-chicken/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Sheet Pan Honey-Dijon Chicken and Vegetables",
+		"url": "https://www.thekitchn.com/recipe-sheet-pan-honey-dijon-chicken-and-vegetables-258363",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "One Pot Moroccan Chicken Stew with Sweet Potato \u0026 Couscous",
+		"url": "https://www.ambitiouskitchen.com/one-pot-moroccan-chicken-stew-sweet-potato-couscous/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Creamy Coconut Chicken Curry",
+		"url": "https://www.theendlessmeal.com/creamy-coconut-chicken-curry/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "30-Minute Sesame Chicken Green Bean Stir Fry",
+		"url": "https://www.ambitiouskitchen.com/chicken-green-bean-stir-fry/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Chili Lime Sweet Potato and Chicken Skillet",
+		"url": "https://sweetpeasandsaffron.com/chili-lime-chicken-and-sweet-potato-skillet/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "One Pan Cilantro Chicken Meatballs in Mango Coconut Sauce",
+		"url": "https://www.ambitiouskitchen.com/cilantro-chicken-meatballs-mango-coconut-sauce/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "One Pan Tandoori Chicken with Spiced Coconut Rice",
+		"url": "https://www.ambitiouskitchen.com/one-pan-tandoori-chicken-spiced-coconut-rice/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Garlic Lemon Herb Mediterranean Chicken + Potatoes (One Pan)",
+		"url": "https://cafedelites.com/garlic-lemon-herb-mediterranean-chicken-potatoes/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "One Pan Mexican Chicken and Rice Bake",
+		"url": "https://chefsavvy.com/mexican-chicken-rice-bake/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Instant Pot Butter Chicken",
+		"url": "https://chefsavvy.com/instant-pot-butter-chicken/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Chicken Cutlets with Sun-Dried Tomato Cream Sauce",
+		"url": "https://www.eatingwell.com/recipe/276341/chicken-cutlets-with-sun-dried-tomato-cream-sauce/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Chicken Parmesan Pasta Skillet",
+		"url": "https://thegirlonbloor.com/one-skillet-chicken-parmesan-orzo/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Creamy Chicken and Rice Recipe",
+		"url": "https://natashaskitchen.com/creamy-chicken-and-rice-recipe/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "30-Minute Italian Chicken Skillet",
+		"url": "https://thegirlonbloor.com/30-minute-one-pan-italian-chicken-skillet/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Pat's Beer Can Grilled Chicken",
+		"url": "https://www.foodnetwork.com/recipes/patrick-and-gina-neely/pats-beer-can-grilled-chicken-recipe-1945080",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Peruvian-Style Roast Chicken with Green Sauce",
+		"url": "https://www.onceuponachef.com/recipes/peruvian-style-roast-chicken-with-green-sauce.html",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Sheet Pan Chicken Pitas with Tzatziki",
+		"url": "https://pinchofyum.com/sheet-pan-chicken-pitas",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Meal Prep Cilantro Lime Chicken with Cauliflower Rice",
+		"url": "https://fitfoodiefinds.com/video-meal-prep-cilantro-lime-chicken-cauliflower-rice/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Chicken Piccata",
+		"url": "https://cooking.nytimes.com/recipes/1019883-chicken-piccata",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Sheet Pan Garlic Ginger Chicken \u0026 Broccoli",
+		"url": "https://pinchofyum.com/garlic-ginger-chicken",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Incredible Caramelized Onion Spinach Chicken Pasta Bake",
+		"url": "https://www.ambitiouskitchen.com/spinach-chicken-pasta-bake/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "One Pan Thai-Inspired Coconut Yellow Curry Chicken \u0026 Rice",
+		"url": "https://www.ambitiouskitchen.com/one-pan-thai-coconut-yellow-curry-chicken-and-rice-video/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Sesame Chicken Bowls",
+		"url": "https://damndelicious.net/2020/04/24/sesame-chicken-bowls/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Creamy Cajun Chicken Pasta with Smoked Sausage",
+		"url": "https://whatsinthepan.com/creamy-cajun-chicken-and-sausage-pasta/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 0,
+		"title": "Sun Dried Tomato Chicken and Gnocchi",
+		"url": "https://damndelicious.net/2021/03/26/sun-dried-tomato-chicken-and-gnocchi/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 1,
+		"title": "Slow Cooker Pot Roast",
+		"url": "https://www.cookingclassy.com/slow-cooker-pot-roast/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 1,
+		"title": "Balsamic Marinated Flank Steak",
+		"url": "https://www.foodandwine.com/recipes/balsamic-marinated-flank-steak",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 1,
+		"title": "Sunday Chili",
+		"url": "https://pinchofyum.com/sunday-chili",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 1,
+		"title": "Keema Aloo (Ground Beef and Potatoes)",
+		"url": "https://www.allrecipes.com/recipe/231026/keema-aloo-ground-beef-and-potatoes/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 1,
+		"title": "One Pot Cheesy Mushroom Spinach Beef Pasta",
+		"url": "https://www.ambitiouskitchen.com/spinach-beef-pasta/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 2,
+		"title": "Ground Turkey Pasta in Romesco Sauce",
+		"url": "https://sweetpeasandsaffron.com/ground-turkey-pasta-in-romesco-sauce/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 2,
+		"title": "Ground Turkey Butternut Squash Skillet",
+		"url": "https://www.yummly.com/recipe/Ground-Turkey-Butternut-Squash-Skillet-9334382?prm-v1",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 2,
+		"title": "Korean Inspired Ground Turkey Meal Prep",
+		"url": "https://sweetpeasandsaffron.com/korean-turkey-meal-prep/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 2,
+		"title": "Turkey Enchilada Skillet",
+		"url": "https://beautyandthebenchpress.com/turkey-enchilada-skillet/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 3,
+		"title": "Sausage Acorn Squash Sheet Pan Dinner",
+		"url": "https://thebeachhousekitchen.com/sausage-acorn-squash-sheet-pan-dinner/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 3,
+		"title": "One Pan Sausage and Vegetable Skillet",
+		"url": "https://chefsavvy.com/one-pan-sausage-and-vegetable-skillet/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 3,
+		"title": "Sausage, Kale, and White Bean Soup",
+		"url": "https://pinchofyum.com/sausage-kale-and-white-bean-soup",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 3,
+		"title": "Spinach Bacon Pumpkin Mac and Cheese",
+		"url": "https://www.ambitiouskitchen.com/pumpkin-mac-and-cheese/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 4,
+		"title": "One Pan Lemon Garlic Salmon and Asparagus",
+		"url": "https://gimmedelicious.com/one-pan-lemon-garlic-salmon-and-asparagus/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 4,
+		"title": "Spicy Maple Glazed Salmon for Two",
+		"url": "https://www.ambitiouskitchen.com/spicy-maple-glazed-salmon/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 4,
+		"title": "One Pan Baked Salmon And Vegetables",
+		"url": "https://www.watchwhatueat.com/one-pan-baked-salmon-and-vegetables/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 4,
+		"title": "Garlic Shrimp And Zucchini Noodles",
+		"url": "https://www.watchwhatueat.com/garlic-shrimp-and-zucchini-noodles/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 4,
+		"title": "Lemon Rosemary Marinated Grilled Halibut",
+		"url": "https://www.foodnetwork.com/recipes/lemon-rosemary-marinated-grilled-halibut-recipe-1941493",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 4,
+		"title": "Walnut-Rosemary Crusted Salmon",
+		"url": "https://www.eatingwell.com/recipe/267223/walnut-rosemary-crusted-salmon/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 4,
+		"title": "Charred Shrimp, Pesto \u0026 Quinoa Bowls",
+		"url": "https://www.eatingwell.com/recipe/274095/charred-shrimp-pesto-buddha-bowls/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 4,
+		"title": "Damn Good Salmon Taco Bowls For Two",
+		"url": "https://www.ambitiouskitchen.com/salmon-taco-bowls/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 4,
+		"title": "Baked Salmon with Amazing Lemon Sauce",
+		"url": "https://pinchofyum.com/baked-salmon-with-amazing-lemon-sauce",
+		"rating": 0,
+		"notes": ""
 	},
 	{
 		"Protein": 5,
-		"title": "veggie Recipe",
-		"url": "www.urmom.com",
-		"rating": 1,
-		"notes": "Super Bland"
+		"title": "15 Minute Lo Mein",
+		"url": "https://pinchofyum.com/lo-mein",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 5,
+		"title": "Roasted Veggie, Chickpea \u0026 Pesto Quinoa Salad",
+		"url": "https://www.ambitiouskitchen.com/roasted-veggie-chickpea-pesto-quinoa-salad/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 5,
+		"title": "Rainbow Vegetarian Pad Thai with Peanuts and Basil",
+		"url": "https://pinchofyum.com/rainbow-vegetarian-pad-thai-with-peanuts-and-basil",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 5,
+		"title": "Curry Noodle Soup",
+		"url": "https://tasty.co/recipe/curry-noodle-soup",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 5,
+		"title": "Chickpea Buddha Bowls \u0026 Greek Chicken Wraps",
+		"url": "https://sweetpeasandsaffron.com/2-in-1-meal-prep-roasted-chickpea-buddha-bowls-greek-chicken-wraps/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 5,
+		"title": "Slow-Cooker Lentil, Carrot \u0026 Potato Soup",
+		"url": "https://www.eatingwell.com/recipe/276956/slow-cooker-lentil-carrot-potato-soup/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 5,
+		"title": "Farmer’s Market Quesadillas",
+		"url": "https://www.mybakingaddiction.com/farmers-market-quesadillas/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 5,
+		"title": "Thai Red Curry with Vegetables",
+		"url": "https://cookieandkate.com/thai-red-curry-recipe/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 5,
+		"title": "Spicy Peanut Soup with Sweet Potato + Kale",
+		"url": "https://pinchofyum.com/sweet-potato-peanut-soup",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 5,
+		"title": "Red Curry Noodles",
+		"url": "https://pinchofyum.com/red-curry-noodles",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 5,
+		"title": "California Roasted Sweet Potato Kale Salad",
+		"url": "https://www.ambitiouskitchen.com/sweet-potato-kale-salad/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 5,
+		"title": "Roasted Rainbow Vegetable Pasta with Cashew Pesto + Goat Cheese",
+		"url": "https://www.ambitiouskitchen.com/roasted-veggie-mediterranean-pasta-goat-cheese/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 5,
+		"title": "Summer Glow Strawberry Kale Salad",
+		"url": "https://www.ambitiouskitchen.com/strawberry-kale-salad/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 5,
+		"title": "Roasted Veggie and Grain Bowl",
+		"url": "https://www.loveandlemons.com/grain-bowl/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 5,
+		"title": "Instant Pot Lentil Soup",
+		"url": "https://www.loveandlemons.com/instant-pot-lentil-soup/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 5,
+		"title": "Renewing Rainbow Kale Salad",
+		"url": "https://www.makingthymeforhealth.com/rainbow-kale-salad-recipe/",
+		"rating": 0,
+		"notes": ""
+	},
+	{
+		"Protein": 6,
+		"title": "Rack of Lamb With Garlic and Herbs",
+		"url": "https://www.epicurious.com/recipes/food/views/rack-of-lamb-with-garlic-and-herbs-1222178",
+		"rating": 0,
+		"notes": ""
 	}
 ]

@@ -62,6 +62,18 @@ func (m *MealDB) String() string {
 	return ret
 }
 
+func (m *MealDB) AddMeal(newMeal Meal) {
+	// ensure this meal is new (use URL as key)
+	for _, m := range m.mealMap[newMeal.Protein] {
+		if m.Url == newMeal.Url {
+			fmt.Println("This item already exists. Skipping...")
+			return
+		}
+	}
+
+	m.mealMap[newMeal.Protein] = append(m.mealMap[newMeal.Protein], newMeal)
+}
+
 func (m *MealDB) GetMealsWithProtein(p Protein) []Meal {
 	return m.mealMap[p]
 }

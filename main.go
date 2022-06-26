@@ -1,8 +1,10 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"meal-manager-poc/dbtools"
+	"os"
 	"strings"
 )
 
@@ -41,8 +43,7 @@ func initDb() {
 	if err := mealDB.Init(); err != nil {
 		fmt.Printf("Initializing DB may have failed: %v", err)
 	}
-
-	fmt.Println(mealDB.String())
+	//fmt.Println(mealDB.String())
 }
 
 // mainMenu provides following options:
@@ -53,9 +54,8 @@ func initDb() {
 func mainMenu() {
 	var userSelection string
 
-	fmt.Println(mainMenuPrompt)
-
 	for {
+		fmt.Println(mainMenuPrompt)
 		fmt.Printf(">")
 		if _, err := fmt.Scanln(&userSelection); err != nil {
 			fmt.Println("Invalid selection. Please try again.")
@@ -68,7 +68,9 @@ func mainMenu() {
 		case "2":
 			searchMeals()
 		case "3":
-			addFood()
+			for {
+				addMeal()
+			}
 		case "4":
 			fmt.Println("Don't forget to feed Marvin!")
 			return
@@ -118,6 +120,42 @@ func printMealByProtein(p dbtools.Protein) {
 	}
 }
 
-func addFood() {
+func addMeal() {
+	reader := bufio.NewReader(os.Stdin)
 
+	var err error
+	var input string
+
+	m := dbtools.Meal{}
+
+	fmt.Println("\nEnter New Meal Info: ")
+	fmt.Print("URL: ")
+	if m.Url, err = reader.ReadString('\n'); err != nil {
+		return
+	}
+	m.Url = strings.TrimSpace(m.Url)
+
+	fmt.Print("Title: ")
+	if m.Title, err = reader.ReadString('\n'); err != nil {
+		return
+	}
+	m.Title = strings.TrimSpace(m.Title)
+
+	fmt.Print("Protein: ")
+	input, err = reader.ReadString('\n')
+	if err != nil {
+		return
+	}
+	input = strings.TrimSpace(strings.ToLower(input))
+	m.Protein = dbtools.StringToProtein(input)
+
+	//fmt.Print("Rating: ")
+	//fmt.Scanln(&m.Url)
+
+	//fmt.Print("Notes: ")
+	//fmt.Scanln(&m.Notes)
+
+	mealDB.AddMeal(m)
+	mealDB.Save()
+	fmt.Println("added and saved!")
 }
