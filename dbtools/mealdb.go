@@ -4,6 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"math/rand"
+	"time"
 )
 
 type MealDB struct {
@@ -76,6 +78,34 @@ func (m *MealDB) AddMeal(newMeal Meal) {
 
 func (m *MealDB) GetMealsWithProtein(p Protein) []Meal {
 	return m.mealMap[p]
+}
+
+func (m *MealDB) Get5RandomMeals() []Meal {
+	// slap together list of all meals
+	meals := make([]Meal, 0)
+	for i, _ := range acceptedProteins {
+		meals = append(meals, m.mealMap[Protein(i)]...)
+	}
+
+	// choose 5 random ones
+	randMeals := make([]Meal, 0)
+	rand.Seed(time.Now().UnixNano())
+	for len(randMeals) < 5 {
+		i := rand.Intn(len(meals))
+		newMeal := meals[i]
+
+		// make sure all 5 given are unique
+		unique := true
+		for _, m := range randMeals {
+			if m.Url == newMeal.Url {
+				unique = false
+			}
+		}
+		if unique {
+			randMeals = append(randMeals, newMeal)
+		}
+	}
+	return randMeals
 }
 
 func (m *MealDB) AddDummyData() {

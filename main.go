@@ -11,7 +11,7 @@ import (
 const (
 	mainMenuPrompt = `
 # ######## MAIN MENU ######### #
-1) Find me Something Good
+1) Find me some meals
 2) Search by protein
 3) Add a food
 4) Exit
@@ -64,7 +64,7 @@ func mainMenu() {
 
 		switch userSelection {
 		case "1":
-			getRandomMeal()
+			get5RandomMeals()
 		case "2":
 			searchMeals()
 		case "3":
@@ -80,8 +80,14 @@ func mainMenu() {
 	}
 }
 
-func getRandomMeal() {
-
+func get5RandomMeals() {
+	rMeals := mealDB.Get5RandomMeals()
+	for _, m := range rMeals {
+		fmt.Printf("\t%v\n", m.String())
+	}
+	if len(rMeals) == 0 {
+		fmt.Println("NONE")
+	}
 }
 
 func searchMeals() {
