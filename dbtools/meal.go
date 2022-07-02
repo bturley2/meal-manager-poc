@@ -28,8 +28,8 @@ type Meal struct {
 }
 
 func (m *Meal) String() string {
-	return fmt.Sprintf("[Title: '%v', Url: '%v', Rating: '%v', Protein: '%v', Notes: '%v']",
-		m.Title, m.Url, m.Rating, m.Protein, m.Notes)
+	return fmt.Sprintf("'%v':\n\t'%v'\n\t'%v']",
+		m.Title, m.Protein, m.Url)
 }
 
 func IsValidProtein(p string) bool {
