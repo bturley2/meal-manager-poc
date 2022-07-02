@@ -83,7 +83,7 @@ func mainMenu() {
 func get5RandomMeals() {
 	rMeals := mealDB.Get5RandomMeals()
 	for _, m := range rMeals {
-		fmt.Printf("\t%v\n", m.String())
+		fmt.Printf("%v\n", m.String())
 	}
 	if len(rMeals) == 0 {
 		fmt.Println("NONE")
