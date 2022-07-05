@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"math/rand"
+	"os"
 	"time"
 )
 
@@ -129,4 +130,33 @@ func (m *MealDB) AddDummyData() {
 	}
 
 	m.mealMap[veggie] = append(m.mealMap[veggie], meal2)
+}
+
+func (m *MealDB) SaveToCSV(path string) {
+	f, err := os.Create(path)
+	if err != nil {
+		fmt.Println("unable to create " + path + "...")
+		return
+	}
+
+	str := fmt.Sprintf("Title,Url,Protein,Rating (1-5),Notes\n")
+	_, err = f.WriteString(str)
+	if err != nil {
+		fmt.Println("unable to write to file")
+		return
+	}
+
+	for _, p := range acceptedProteins {
+		meals := m.mealMap[StringToProtein(p)]
+
+		for _, m := range meals {
+			str = fmt.Sprintf("%v,%v,%v,%v,%v\n", m.Title, m.Url, ProteinToString(m.Protein), m.Rating, m.Notes)
+			_, err = f.WriteString(str)
+			if err != nil {
+				fmt.Println("unable to save meal " + m.Title)
+				return
+			}
+		}
+	}
+
 }

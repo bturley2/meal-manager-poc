@@ -33,6 +33,7 @@ var (
 
 func main() {
 	initDb()
+	mealDB.SaveToCSV("mealdb.csv")
 	mainMenu()
 }
 

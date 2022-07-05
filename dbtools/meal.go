@@ -28,7 +28,7 @@ type Meal struct {
 }
 
 func (m *Meal) String() string {
-	return fmt.Sprintf("'%v':\n\t'%v'",
+	return fmt.Sprintf("'%v':\n\t\t'%v'",
 		m.Title, m.Url)
 }
 
